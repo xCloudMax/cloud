@@ -113,7 +113,7 @@ Check after going to localhost:50070
 
 # Hadoop running the wordcount program
 ## Check hadoop and javac are installed
-javac -version
+javac -version\
 hadoop version
 ## Start hadoop services
 start-all.sh (if not working from any path, cd to hadoop and check in all directories to find start-all.sh)
