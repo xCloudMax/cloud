@@ -133,8 +133,8 @@ hadoop fs -mkdir /wordcount/input
 ## Upload the input file 
 hadoop fs -put <INPUT_FILE_PATH> /wordcount/input
 ## Compile the java code and bundle it as a a jar
-javac -classpath ${HADOOP_CLASSPATH} -d <classes-folder-path> <javaprogram-path>
-jar -cvf <jar-file-name> -C <classes-folder-path> .
+javac -classpath ${HADOOP_CLASSPATH} -d <CLASSES-FOLDER-PATH> <JAVAPROGRAM-PATH>
+jar -cvf <jar-file-name> -C <CLASSES-FOLDER-PATH> .
 ## Run the program
 hadoop jar <jar-file-path> WordCount '/wordcount/input' '/wordcount/output'
 ## Check the output in the browser or through terminal with the command:
